@@ -16,7 +16,7 @@ const DateField = () => {
     const error = validate(japaneseYearInfo, yearInput);
     const value =
       error ||
-      `${japaneseYearInfo.names.english} Year ${yearInput - japaneseYearInfo.startYear + 1}`;
+      `${japaneseYearInfo.names.english} (${japaneseYearInfo.names.kanji}) Year ${yearInput - japaneseYearInfo.startYear + 1}`;
     setDateOutput(value);
   };
 

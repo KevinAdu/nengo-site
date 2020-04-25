@@ -40,7 +40,7 @@ describe('DateField', () => {
         wrapper.update();
       });
 
-      expect(wrapper.find('h2').text()).toEqual('Heisei Year 1');
+      expect(wrapper.find('h2').text()).toEqual('Heisei (平成) Year 1');
     });
   });
 
