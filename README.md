@@ -35,20 +35,10 @@ To run the tests:
 npm run test
 ```
 
-### And coding style tests
+### Coding style
 
 We use [prettier](https://prettier.io/) to lint our JavaScript code.
 These are run every time there is a commit via a pre commit hook.
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Authors
 
