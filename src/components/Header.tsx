@@ -6,12 +6,12 @@ const Header = () => (
     <nav className="nav">
       <ul className="nav__menu">
         <li className="nav__item">
-          <Link to="/" class="nav__link">
+          <Link to="/" className="nav__link">
             Home
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="/about" class="nav__link">
+          <Link to="/about" className="nav__link">
             About
           </Link>
         </li>
