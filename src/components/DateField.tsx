@@ -12,7 +12,7 @@ const DateField = () => {
 
   const onInputChange = e => {
     const yearInput = Number.parseInt(e.target.value);
-    const japaneseYearInfo = japaneseYear(yearInput);
+    const japaneseYearInfo = japaneseYear(new Date(yearInput));
     const error = validate(japaneseYearInfo, yearInput);
     const value =
       error ||
