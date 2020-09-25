@@ -44,7 +44,7 @@ These are run every time there is a commit via a pre commit hook.
 
 * **Kevin Adu-Sarkodie** - *Initial work* - [KevinAdu](https://github.com/KevinAdu)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/KevinAdu/nengo-site/contributors) who participated in this project.
 
 ## License
 
