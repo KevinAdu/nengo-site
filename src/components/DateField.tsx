@@ -4,7 +4,7 @@ import { japaneseYear } from 'nengo';
 const DateField = () => {
   const [dateOutput, setDateOutput] = useState('Please enter a year');
 
-  const validate = (japaneseYearInfo, yearInput) => {
+  const validate = (japaneseYearInfo: PeriodAndExactYear, yearInput: number) => {
     if (!japaneseYearInfo) return 'The year you have entered is not yet supported.';
     if (!Number.isInteger(yearInput)) return 'Please enter a valid year';
     return false;
