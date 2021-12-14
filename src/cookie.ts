@@ -1,4 +1,4 @@
-export const get = key => {
+export const get = (key: string) => {
   const cookie = document.cookie
     .split(';')
     .map(c => c.split('='))
@@ -6,6 +6,6 @@ export const get = key => {
   return cookie && cookie[1];
 };
 
-export const set = (key, value) => {
+export const set = (key: string, value: string) => {
   document.cookie = `${key}=${value}`;
 };

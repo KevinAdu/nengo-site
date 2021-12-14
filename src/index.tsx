@@ -11,7 +11,7 @@ function getLocale() {
   return cookie.get(LOCALE_COOKIE) || 'en';
 }
 
-export function saveLocale(locale) {
+export function saveLocale(locale: string) {
   cookie.set(LOCALE_COOKIE, locale);
 }
 
