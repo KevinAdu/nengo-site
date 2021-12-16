@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "update": "ttag update src/i18n/ja.po src/",
     "po2json": "ttag po2json src/i18n/ja.po > src/i18n/ja.po.json",
