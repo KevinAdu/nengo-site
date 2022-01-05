@@ -23,7 +23,7 @@ describe('DateField', () => {
   describe('on input change', () => {
     it('should change state value to unsupported message when year is not in range', () => {
       const { onChange } = wrapper.find('input').props();
-      const event = { target: { value: '1' } } as React.ChangeEvent<HTMLInputElement>;
+      const event = { target: { value: '199' } } as React.ChangeEvent<HTMLInputElement>;
 
       act(() => {
         onChange(event);
@@ -35,14 +35,14 @@ describe('DateField', () => {
 
     it('should change state value to correct japanese calendar year', () => {
       const { onChange } = wrapper.find('input').props();
-      const event = { target: { value: '1989' } } as React.ChangeEvent<HTMLInputElement>;
+      const event = { target: { value: '1990' } } as React.ChangeEvent<HTMLInputElement>;
 
       act(() => {
         onChange(event);
         wrapper.update();
       });
 
-      expect(wrapper.find('h2').text()).toEqual('Heisei (平成) Year 1');
+      expect(wrapper.find('h2').text()).toEqual('Heisei (平成) Year 2');
     });
   });
 
