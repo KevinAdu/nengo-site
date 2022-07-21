@@ -4,7 +4,7 @@ import DateField from '../components/DateField';
 
 function Home() {
   return (
-    <main className="main">
+    <main className=" mx-auto my-auto">
       <Hero />
       <DateField />
     </main>

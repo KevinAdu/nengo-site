@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './styles/app.scss';
-import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 
-class App extends Component {
-  render() {
+const App = () =>  {
+ 
     return (
-      <div className="container">
+      <div id="app" className="grid justify-center align-center h-screen bg-gradient-to-b from-purple-900 to-purple-500">
         <Router>
-          <Header />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <footer className="footer" />
         </Router>
       </div>
     );
-  }
+  
 }
 
 export default App;

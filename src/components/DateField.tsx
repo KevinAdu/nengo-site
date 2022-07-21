@@ -23,9 +23,9 @@ const DateField = () => {
   };
 
   return (
-    <div className="date-display">
-      <h2>{dateOutput}</h2>
-      <input type="number" onChange={onInputChange} />;
+    <div className="flex justify-center align-center flex-col">
+      <h2 className="text-white text-center text-lg mb-4">{dateOutput}</h2>
+      <input className="text-center" type="number" onChange={onInputChange} />
     </div>
   );
 };
