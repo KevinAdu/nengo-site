@@ -6,7 +6,7 @@ import About from './pages/About';
 const App = () =>  {
  
     return (
-      <div className="grid justify-center align-center h-screen bg-gradient-to-b from-purple-900 to-purple-500">
+      <div id="app" className="grid justify-center align-center h-screen bg-gradient-to-b from-purple-900 to-purple-500">
         <Router>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
