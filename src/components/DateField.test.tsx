@@ -26,7 +26,7 @@ describe('DateField', () => {
       const event = { target: { value: '199' } } as React.ChangeEvent<HTMLInputElement>;
 
       act(() => {
-        onChange(event);
+        if (onChange) onChange(event);
         wrapper.update();
       });
 
@@ -38,7 +38,7 @@ describe('DateField', () => {
       const event = { target: { value: '1990' } } as React.ChangeEvent<HTMLInputElement>;
 
       act(() => {
-        onChange(event);
+        if (onChange) onChange(event);
         wrapper.update();
       });
 
@@ -51,7 +51,7 @@ describe('DateField', () => {
     const event = { target: { value: 'aaa' } } as React.ChangeEvent<HTMLInputElement>;
 
     act(() => {
-      onChange(event);
+      if (onChange) onChange(event);
       wrapper.update();
     });
 
