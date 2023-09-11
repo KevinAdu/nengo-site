@@ -12,7 +12,7 @@ const router = createBrowserRouter(routerConfig);
 
 const App = () =>  {
   return (
-    <div id="app" className="grid justify-center align-center h-screen bg-gradient-to-b from-purple-900 to-purple-500">
+    <div className="grid justify-center align-center h-screen bg-gradient-to-b from-purple-900 to-purple-500">
       <RouterProvider router={router} />
     </div>
   );
