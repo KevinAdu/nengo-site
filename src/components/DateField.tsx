@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { japaneseYear } from 'nengo';
 
 const DateField = () => {
+  const currentYear = japaneseYear(new Date());
   const [dateOutput, setDateOutput] = useState('Please enter a year');
 
   const validate = (japaneseYearInfo: any, yearInput: number) => {
@@ -16,16 +17,17 @@ const DateField = () => {
     const error = validate(japaneseYearInfo, yearInput);
     const value =
       error ||
-      `${japaneseYearInfo.names.english} (${japaneseYearInfo.names.kanji}) Year ${yearInput -
-        japaneseYearInfo.startYear +
-        1}`;
+      `${japaneseYearInfo.names.english} (${japaneseYearInfo.names.kanji}) Year ${yearInput - japaneseYearInfo.startYear + 1}`;
     setDateOutput(value);
   };
 
   return (
     <div className="flex justify-center align-center flex-col">
-      <h2 className="text-white text-center text-lg mb-4">{dateOutput}</h2>
+      <h3 className="text-white text-center text-lg mb-4 text-center">{dateOutput}</h3>
       <input className="text-center" type="number" onChange={onInputChange} />
+      <h3 className="text-white text-center text-lg mb-4">
+        The current year is {currentYear.names.english} {new Date().getFullYear() - currentYear.startYear + 1}
+      </h3>
     </div>
   );
 };
